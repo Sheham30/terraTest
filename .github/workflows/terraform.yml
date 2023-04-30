@@ -39,8 +39,9 @@ jobs:
       # Run Terraform plan to preview the changes
       - name: Terraform Plan
         id: plan
+        # -out=tfplan will generate binary file named "tfplan" 
         run: |
-          terraform init
+          terraform init    
           terraform plan -out=tfplan
 
       # Apply the changes to the infrastructure if the push is made to the main branch
