@@ -1,8 +1,6 @@
-provider "aws" {
-}
 
 resource "aws_s3_bucket" "example" {
-  bucket = "sheham20203314"
+  bucket = "sheham20203315"
 
   tags = {
     Name        = "My bucket"
